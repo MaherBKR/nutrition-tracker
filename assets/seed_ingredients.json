@@ -1,1 +1,377 @@
-
+[
+  {
+    "name": "Chicken Breast",
+    "category": "Poultry & Meat",
+    "prep_method": "Raw",
+    "cal_per_100g": 120.0,
+    "p_per_100g": 23.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 2.5,
+    "price_per_kg": 18.5,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "piece/fillet", "gram_equivalent": 150.0},
+      {"unit_name": "strip", "gram_equivalent": 40.0}
+    ]
+  },
+  {
+    "name": "Chicken Breast",
+    "category": "Poultry & Meat",
+    "prep_method": "Boiled/Poached",
+    "cal_per_100g": 150.0,
+    "p_per_100g": 29.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 3.0,
+    "price_per_kg": 23.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "piece/fillet", "gram_equivalent": 120.0},
+      {"unit_name": "strip", "gram_equivalent": 32.0}
+    ]
+  },
+  {
+    "name": "Chicken Breast",
+    "category": "Poultry & Meat",
+    "prep_method": "Air-Fried",
+    "cal_per_100g": 165.0,
+    "p_per_100g": 31.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 3.6,
+    "price_per_kg": 24.6,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "piece/fillet", "gram_equivalent": 112.5},
+      {"unit_name": "strip", "gram_equivalent": 30.0}
+    ]
+  },
+  {
+    "name": "Chicken Breast",
+    "category": "Poultry & Meat",
+    "prep_method": "Oven-Roasted",
+    "cal_per_100g": 165.0,
+    "p_per_100g": 31.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 3.6,
+    "price_per_kg": 24.6,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "piece/fillet", "gram_equivalent": 112.5}
+    ]
+  },
+  {
+    "name": "Chicken Breast",
+    "category": "Poultry & Meat",
+    "prep_method": "Pan-Fried",
+    "cal_per_100g": 195.0,
+    "p_per_100g": 30.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 7.5,
+    "price_per_kg": 25.5,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "piece/fillet", "gram_equivalent": 115.0},
+      {"unit_name": "strip", "gram_equivalent": 32.0}
+    ]
+  },
+  {
+    "name": "Turkey Breast / Escalope",
+    "category": "Poultry & Meat",
+    "prep_method": "Grilled",
+    "cal_per_100g": 158.0,
+    "p_per_100g": 30.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 3.2,
+    "price_per_kg": 22.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "piece/fillet", "gram_equivalent": 140.0},
+      {"unit_name": "strip", "gram_equivalent": 40.0}
+    ]
+  },
+  {
+    "name": "Lean Beef Minced (5%)",
+    "category": "Poultry & Meat",
+    "prep_method": "Grilled",
+    "cal_per_100g": 172.0,
+    "p_per_100g": 28.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 6.2,
+    "price_per_kg": 34.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "piece/fillet", "gram_equivalent": 125.0}
+    ]
+  },
+  {
+    "name": "Canned Tuna",
+    "category": "Fish & Seafood",
+    "prep_method": "In Brine drained",
+    "cal_per_100g": 116.0,
+    "p_per_100g": 26.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 1.0,
+    "price_per_kg": 32.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "drained can", "gram_equivalent": 110.0}
+    ]
+  },
+  {
+    "name": "Canned Tuna",
+    "category": "Fish & Seafood",
+    "prep_method": "In Oil drained",
+    "cal_per_100g": 198.0,
+    "p_per_100g": 29.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 8.2,
+    "price_per_kg": 30.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "drained can", "gram_equivalent": 110.0}
+    ]
+  },
+  {
+    "name": "Sardines",
+    "category": "Fish & Seafood",
+    "prep_method": "Fresh Grilled",
+    "cal_per_100g": 185.0,
+    "p_per_100g": 23.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 10.2,
+    "price_per_kg": 12.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "individual fish", "gram_equivalent": 35.0}
+    ]
+  },
+  {
+    "name": "Salmon",
+    "category": "Fish & Seafood",
+    "prep_method": "Air-Fried",
+    "cal_per_100g": 208.0,
+    "p_per_100g": 22.5,
+    "c_per_100g": 0.0,
+    "f_per_100g": 13.0,
+    "price_per_kg": 55.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "piece/fillet", "gram_equivalent": 150.0}
+    ]
+  },
+  {
+    "name": "Whole Egg",
+    "category": "Eggs & Dairy",
+    "prep_method": "Boiled",
+    "cal_per_100g": 155.0,
+    "p_per_100g": 12.6,
+    "c_per_100g": 1.1,
+    "f_per_100g": 10.6,
+    "price_per_kg": 9.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "whole egg", "gram_equivalent": 50.0},
+      {"unit_name": "egg white", "gram_equivalent": 33.0}
+    ]
+  },
+  {
+    "name": "Separated Egg Whites",
+    "category": "Eggs & Dairy",
+    "prep_method": "Raw",
+    "cal_per_100g": 52.0,
+    "p_per_100g": 10.9,
+    "c_per_100g": 0.7,
+    "f_per_100g": 0.2,
+    "price_per_kg": 11.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "egg white", "gram_equivalent": 33.0}
+    ]
+  },
+  {
+    "name": "Ricotta",
+    "category": "Eggs & Dairy",
+    "prep_method": "Raw",
+    "cal_per_100g": 150.0,
+    "p_per_100g": 11.0,
+    "c_per_100g": 3.0,
+    "f_per_100g": 10.0,
+    "price_per_kg": 14.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "tbsp", "gram_equivalent": 15.0}
+    ]
+  },
+  {
+    "name": "Greek Yogurt / Fromage Blanc",
+    "category": "Eggs & Dairy",
+    "prep_method": "Raw",
+    "cal_per_100g": 73.0,
+    "p_per_100g": 9.5,
+    "c_per_100g": 3.8,
+    "f_per_100g": 2.0,
+    "price_per_kg": 10.5,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "tbsp", "gram_equivalent": 15.0}
+    ]
+  },
+  {
+    "name": "Whole-Wheat Tortilla / Wrap",
+    "category": "Grains & Wraps",
+    "prep_method": "Raw",
+    "cal_per_100g": 295.0,
+    "p_per_100g": 8.5,
+    "c_per_100g": 48.0,
+    "f_per_100g": 6.5,
+    "price_per_kg": 15.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "large tortilla", "gram_equivalent": 65.0},
+      {"unit_name": "medium tortilla", "gram_equivalent": 45.0}
+    ]
+  },
+  {
+    "name": "Oats",
+    "category": "Grains & Wraps",
+    "prep_method": "Raw rolled",
+    "cal_per_100g": 379.0,
+    "p_per_100g": 13.2,
+    "c_per_100g": 67.7,
+    "f_per_100g": 6.5,
+    "price_per_kg": 7.5,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "tbsp", "gram_equivalent": 10.0}
+    ]
+  },
+  {
+    "name": "Basmati Rice",
+    "category": "Grains & Wraps",
+    "prep_method": "Boiled",
+    "cal_per_100g": 130.0,
+    "p_per_100g": 2.7,
+    "c_per_100g": 28.2,
+    "f_per_100g": 0.3,
+    "price_per_kg": 5.5,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "cup cooked", "gram_equivalent": 160.0}
+    ]
+  },
+  {
+    "name": "Chickpeas",
+    "category": "Legumes & Veggies",
+    "prep_method": "Boiled/Canned drained",
+    "cal_per_100g": 164.0,
+    "p_per_100g": 8.9,
+    "c_per_100g": 27.4,
+    "f_per_100g": 2.6,
+    "price_per_kg": 6.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "cup drained", "gram_equivalent": 165.0},
+      {"unit_name": "ladle", "gram_equivalent": 150.0}
+    ]
+  },
+  {
+    "name": "Lentils",
+    "category": "Legumes & Veggies",
+    "prep_method": "Boiled",
+    "cal_per_100g": 116.0,
+    "p_per_100g": 9.0,
+    "c_per_100g": 20.0,
+    "f_per_100g": 0.4,
+    "price_per_kg": 6.5,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "ladle", "gram_equivalent": 150.0}
+    ]
+  },
+  {
+    "name": "Potatoes / Sweet Potatoes",
+    "category": "Legumes & Veggies",
+    "prep_method": "Air-Fried wedges",
+    "cal_per_100g": 135.0,
+    "p_per_100g": 2.4,
+    "c_per_100g": 26.5,
+    "f_per_100g": 2.2,
+    "price_per_kg": 3.5,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "medium potato", "gram_equivalent": 180.0}
+    ]
+  },
+  {
+    "name": "Harissa",
+    "category": "Fats & Condiments",
+    "prep_method": "Raw",
+    "cal_per_100g": 75.0,
+    "p_per_100g": 2.5,
+    "c_per_100g": 9.0,
+    "f_per_100g": 3.2,
+    "price_per_kg": 9.5,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "tsp", "gram_equivalent": 5.0},
+      {"unit_name": "tbsp", "gram_equivalent": 15.0}
+    ]
+  },
+  {
+    "name": "Olive Oil",
+    "category": "Fats & Condiments",
+    "prep_method": "Raw",
+    "cal_per_100g": 884.0,
+    "p_per_100g": 0.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 100.0,
+    "price_per_kg": 25.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "ml", "gram_equivalent": 0.92},
+      {"unit_name": "tsp", "gram_equivalent": 4.6},
+      {"unit_name": "tbsp", "gram_equivalent": 13.8}
+    ]
+  },
+  {
+    "name": "Whey Protein Isolate",
+    "category": "Supplements",
+    "prep_method": "Raw",
+    "cal_per_100g": 370.0,
+    "p_per_100g": 83.0,
+    "c_per_100g": 3.5,
+    "f_per_100g": 2.0,
+    "price_per_kg": 95.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "protein scoop", "gram_equivalent": 30.0}
+    ]
+  },
+  {
+    "name": "Creatine Monohydrate",
+    "category": "Supplements",
+    "prep_method": "Raw",
+    "cal_per_100g": 0.0,
+    "p_per_100g": 0.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 0.0,
+    "price_per_kg": 80.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "creatine scoop", "gram_equivalent": 5.0}
+    ]
+  },
+  {
+    "name": "Collagen Peptides (+ Vit C)",
+    "category": "Supplements",
+    "prep_method": "Raw",
+    "cal_per_100g": 360.0,
+    "p_per_100g": 90.0,
+    "c_per_100g": 0.0,
+    "f_per_100g": 0.0,
+    "price_per_kg": 88.0,
+    "units": [
+      {"unit_name": "g", "gram_equivalent": 1.0},
+      {"unit_name": "collagen scoop", "gram_equivalent": 10.0}
+    ]
+  }
+]
