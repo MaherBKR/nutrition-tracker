@@ -33,13 +33,13 @@ jobs:
           rm -rf lib && mv lib_bak lib
           sed -i 's/<application/<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"\/>\n    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"\/>\n    <uses-permission android:name="android.permission.USE_EXACT_ALARM"\/>\n    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"\/>\n    <application/' android/app/src/main/AndroidManifest.xml
 
-      - name: Fix Kotlin DSL Build Properties & Enable Desugaring
+      - name: Configure Desugaring and Fix Gradle Properties
         run: |
           KTS_FILE="android/app/build.gradle.kts"
           if [ -f "$KTS_FILE" ]; then
-            # Define flutterVersionCode and flutterVersionName safely if missing
-            sed -i '1i val flutterVersionCode = localProperties.getProperty("flutter.versionCode")?.toInt() ?: 1' "$KTS_FILE"
-            sed -i '1i val flutterVersionName = localProperties.getProperty("flutter.versionName") ?: "1.0"' "$KTS_FILE"
+            # Replace the missing version variables safely with hardcoded defaults to prevent evaluation crashes
+            sed -i 's/versionCode = flutterVersionCode.toInteger()/versionCode = 1/g' "$KTS_FILE"
+            sed -i 's/versionName = flutterVersionName/versionName = "1.0"/g' "$KTS_FILE"
             
             # Enable core library desugaring inside compileOptions
             sed -i '/compileOptions {/a \        isCoreLibraryDesugaringEnabled = true' "$KTS_FILE"
