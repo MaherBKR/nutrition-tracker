@@ -33,18 +33,21 @@ jobs:
           rm -rf lib && mv lib_bak lib
           sed -i 's/<application/<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"\/>\n    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"\/>\n    <uses-permission android:name="android.permission.USE_EXACT_ALARM"\/>\n    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"\/>\n    <application/' android/app/src/main/AndroidManifest.xml
 
-      - name: Enable Core Library Desugaring
+      - name: Enable Core Library Desugaring (Kotlin DSL)
         run: |
-          GRADLE_FILE="android/app/build.gradle"
-          if [ -f "$GRADLE_FILE" ]; then
-            # Add coreLibraryDesugaringEnabled true inside defaultConfig
-            sed -i '/defaultConfig {/a \        coreLibraryDesugaringEnabled true' "$GRADLE_FILE"
+          KTS_FILE="android/app/build.gradle.kts"
+          if [ -f "$KTS_FILE" ]; then
+            # Enable coreLibraryDesugaringEnabled inside compileOptions
+            sed -i 's/isCoreLibraryDesugaringEnabled = true/isCoreLibraryDesugaringEnabled = true/g' "$KTS_FILE"
+            if ! grep -q "isCoreLibraryDesugaringEnabled" "$KTS_FILE"; then
+              sed -i '/compileOptions {/a \        isCoreLibraryDesugaringEnabled = true' "$KTS_FILE"
+            fi
             
-            # Add the dependencies block at the end of the file for desugaring
-            echo "" >> "$GRADLE_FILE"
-            echo "dependencies {" >> "$GRADLE_FILE"
-            echo "    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'" >> "$GRADLE_FILE"
-            echo "}" >> "$GRADLE_FILE"
+            # Append the desugaring dependency to the dependencies block
+            echo "" >> "$KTS_FILE"
+            echo "dependencies {" >> "$KTS_FILE"
+            echo "    coreLibraryDesugaring(\"com.android.tools:desugar_jdk_libs:2.0.4\")" >> "$KTS_FILE"
+            echo "}" >> "$KTS_FILE"
           fi
 
       - name: Install Flutter Dependencies
