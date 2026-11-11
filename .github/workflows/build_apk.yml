@@ -33,6 +33,20 @@ jobs:
           rm -rf lib && mv lib_bak lib
           sed -i 's/<application/<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"\/>\n    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"\/>\n    <uses-permission android:name="android.permission.USE_EXACT_ALARM"\/>\n    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"\/>\n    <application/' android/app/src/main/AndroidManifest.xml
 
+      - name: Enable Core Library Desugaring
+        run: |
+          GRADLE_FILE="android/app/build.gradle"
+          if [ -f "$GRADLE_FILE" ]; then
+            # Add coreLibraryDesugaringEnabled true inside defaultConfig
+            sed -i '/defaultConfig {/a \        coreLibraryDesugaringEnabled true' "$GRADLE_FILE"
+            
+            # Add the dependencies block at the end of the file for desugaring
+            echo "" >> "$GRADLE_FILE"
+            echo "dependencies {" >> "$GRADLE_FILE"
+            echo "    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'" >> "$GRADLE_FILE"
+            echo "}" >> "$GRADLE_FILE"
+          fi
+
       - name: Install Flutter Dependencies
         run: flutter pub get
 
