@@ -37,13 +37,10 @@ jobs:
         run: |
           KTS_FILE="android/app/build.gradle.kts"
           if [ -f "$KTS_FILE" ]; then
-            # Enable coreLibraryDesugaringEnabled inside compileOptions
-            sed -i 's/isCoreLibraryDesugaringEnabled = true/isCoreLibraryDesugaringEnabled = true/g' "$KTS_FILE"
-            if ! grep -q "isCoreLibraryDesugaringEnabled" "$KTS_FILE"; then
-              sed -i '/compileOptions {/a \        isCoreLibraryDesugaringEnabled = true' "$KTS_FILE"
-            fi
+            # Enable core library desugaring inside compileOptions
+            sed -i '/compileOptions {/a \        isCoreLibraryDesugaringEnabled = true' "$KTS_FILE"
             
-            # Append the desugaring dependency to the dependencies block
+            # Append the desugaring dependency safely at the end of the file
             echo "" >> "$KTS_FILE"
             echo "dependencies {" >> "$KTS_FILE"
             echo "    coreLibraryDesugaring(\"com.android.tools:desugar_jdk_libs:2.0.4\")" >> "$KTS_FILE"
